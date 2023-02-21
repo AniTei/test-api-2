@@ -1,31 +1,27 @@
-
 body {
-    background-color: rgb(236, 134, 129);
-/*     when in doubt use Caslon
+    background-color: aquamarine;
+    /*     when in doubt use Caslon
  */
 }
 
-h1, h2{
+h1 {
     color: palevioletred;
     text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 1em;
 }
 
-.listed-img {
-
-}
-
-div {
-    color: rgb(23, 66, 51);
-    background-color: rgb(229, 252, 245);
+div h2 {
+    color: rgb(33, 121, 92);
     text-align: center;
 }
 
 p {
-    color: rgb(23, 66, 51);
-    text-align: center;
+    color: rgb(33, 121, 92);
 }
 
-header{
+header {
     position: sticky;
     top: 0px;
 }
@@ -36,18 +32,17 @@ nav {
 }
 
 a {
-    text-decoration: none;   
+    text-decoration: none;
     color: rgb(33, 121, 92);
 }
 
 nav a {
-    font-size: 1.6em;
+    font-size: 1.3em;
     text-transform: uppercase;
-
 }
 
-nav a:hover {
-    color:rgb(23, 66, 51);
+a:hover {
+    color: rgb(23, 66, 51);
 }
 
 .contact-link {
@@ -56,24 +51,27 @@ nav a:hover {
 }
 
 .content-container {
+    background-color: white;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 5em;
-
+    padding: 0% 15% 15% 15%;
+    color: rgb(33, 121, 92);
 }
-.user-item-index {
-    padding: 4em;
+
+.item-index {
+    padding: 1em;
     background-color: rgb(255, 255, 255);
-    max-width: 20%;
+    max-width: 200px;
+    margin: 1em;
 }
 
-.user-img-index {
-    border-radius: 50%;
-    padding: 0.2em;
+.listed-img {
+    max-width: 200px;
 
 }
-.username-index {
+
+.name-index {
     font-size: 1.4em;
 }
 
@@ -82,3 +80,46 @@ nav a:hover {
     font-size: 2em;
 }
 
+
+/* //////////////////////////// */
+
+.details-name {
+    font-size: 2em;
+    text-align: left;
+}
+
+.details-img {
+    width: 400px;
+    max-width: 60%;
+
+}
+
+.details-content {
+    background-color: rgb(229, 252, 245);
+    padding: 1% 10% 5% 10%;
+}
+
+
+/* //////////////////////////// */
+
+
+
+
+input {
+    margin-top: 5px;
+}
+
+.subject {
+    height: 200px;
+}
+
+.form-container {
+    background-color: rgb(229, 252, 245);
+    padding: 10%;
+}
+button {
+    margin-top: 10px;
+    color: palevioletred;
+    background-color: aquamarine;
+    width: 200px;
+}
