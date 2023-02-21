@@ -10,6 +10,10 @@ h1, h2{
     text-align: center;
 }
 
+.listed-img {
+
+}
+
 div {
     color: rgb(23, 66, 51);
     background-color: rgb(229, 252, 245);
@@ -60,7 +64,8 @@ nav a:hover {
 }
 .user-item-index {
     padding: 4em;
-    background-color: rgb(229, 252, 245);
+    background-color: rgb(255, 255, 255);
+    max-width: 20%;
 }
 
 .user-img-index {

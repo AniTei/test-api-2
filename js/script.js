@@ -29,7 +29,10 @@ async function getSomeContent() {
             contentDiv.innerHTML += `<a href="details.html?id=${data.drinks[i].idDrink}"> 
                                     <div class="user-item-index">
     
-                                         <div class="username-index"> @${data.drinks[i].strDrink}</div>
+                                         <div class="username-index"> ${data.drinks[i].strDrink}</div>
+                                         <div> This drink is ${data.drinks[i].strAlcoholic}</div>
+                                         <img class="listed-img" src="${data.drinks[i].strDrinkThumb}" alt= "serving example"/>
+                                         
                                             </div>
                                 </a>`;
         }

@@ -1,6 +1,7 @@
-const detContDiv = document.querySelector(".details-content")
+const detContDiv = document.querySelector(".details-content");
+const detailsTitle = document.querySelector (".details-title");
 
-//detContDiv.innerHTML = `<div> nærmere bestemt...</div>`;
+
 
 const queryString = document.location.search;
 
@@ -15,7 +16,7 @@ console.log(idDrink);
 
 
 
-const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + idDrink;
+const url = "htttps://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + idDrink;
 
 //, I have hardcoded a specific drink into the url, now I need to pass the idDrink into it
 
@@ -36,12 +37,31 @@ async function findDrink() {
 
         const yourDrink = data.drinks[0]
 
-        detContDiv.innerHTML = `<div> ${yourDrink.strDrink}</div>`
+        detContDiv.innerHTML =
+        `<div>
+            <img src="${yourDrink.strDrinkThumb}" alt = "serving example"/>
+            <div> ${yourDrink.strDrink}</div>
+            <div> 
+                <p>Main ingredients: ${yourDrink.strIngredient1}, ${yourDrink.strIngredient2}, ${yourDrink.strIngredient3} </p>
+                <p>Instructions: ${yourDrink.strInstructions}</p>
+            </div>
+        </div>`
+
+        detailsTitle.innerHTML = `${yourDrink.strDrink}`;
+
 
 
     }
     catch (error) {
-        console.log(error)
+
+
+
+
+        console.log("OOOPSIE:/sjekk internettforbindelse!!!", error);
+
+        detContDiv.innerHTML = `<div class="error">OH NO, something went wrong 😢</div>`;
+
+        
     }
 }
 
