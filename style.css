@@ -1,0 +1,79 @@
+
+body {
+    background-color: rgb(236, 134, 129);
+/*     when in doubt use Caslon
+ */
+}
+
+h1, h2{
+    color: palevioletred;
+    text-align: center;
+}
+
+div {
+    color: rgb(23, 66, 51);
+    background-color: rgb(229, 252, 245);
+    text-align: center;
+}
+
+p {
+    color: rgb(23, 66, 51);
+    text-align: center;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+nav {
+    background-color: rgb(229, 252, 245);
+    padding: 1.4em;
+}
+
+a {
+    text-decoration: none;   
+    color: rgb(33, 121, 92);
+}
+
+nav a {
+    font-size: 1.6em;
+    text-transform: uppercase;
+
+}
+
+nav a:hover {
+    color:rgb(23, 66, 51);
+}
+
+.contact-link {
+    position: relative;
+    float: right;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5em;
+
+}
+.user-item-index {
+    padding: 4em;
+    background-color: rgb(229, 252, 245);
+}
+
+.user-img-index {
+    border-radius: 50%;
+    padding: 0.2em;
+
+}
+.username-index {
+    font-size: 1.4em;
+}
+
+.error {
+    color: black;
+    font-size: 2em;
+}
+
