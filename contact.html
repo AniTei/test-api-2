@@ -19,14 +19,50 @@
         <h1>Contact us</h1>
 
         <div class="form-container">
-            <form>
-                <div><input name="name" id="name" placeholder="Your name"></div>
-                <div><input class="subject" name="subject" id="subject" placeholder="Tell us something..."></div>
-                <div><input name="email" id="email" placeholder="Your e-mail"></div>
-                <div><input name="address" id="address" placeholder="Your address"></div>
-                <button>Submit</button>
 
-            </form>
+            <fieldset>
+                <form>
+                    <div>
+                        <label for="name">Your name <div class="form-error">(required)</div></label>
+                        <input name="name" id="name" placeholder="Navn Navnesen">
+
+
+                    </div>
+                    <div>
+                        <label for="message">Tell us something (minimum length of 10)<div class="form-error">(minimum
+                                length of 10)</div></label>
+                        <div><input class="subject" name="message" id="message" placeholder="Start typing"></div>
+                        <!-- would have liked this to be a textarea, so the text would wrap, 
+                            but unsure if that is allowd pr the assignment instructions, 
+                            or is there a way to to that while it still being input-->
+                    </div>
+
+                    <div>
+                        <label for="email">Your e-mail <div class="form-error">(must be formatted like an email)</div>
+                            </label>
+                        <div><input name="email" id="email" placeholder="navn.navnesen@example.com"></div>
+
+                    </div>
+                    <div>
+                        <label for="address">Your Address <div class="form-error">(minimum length og 25)</div></label>
+                        <div><input name="address" id="address" placeholder="Storgata 1, Postnummer Poststed"></div>
+
+                    </div>
+                    <!-- the names of the inputs become the parameter sent in the querystring, with whatever written as the value -->
+                    <!-- this is how forms work,default behaviour, very basic -->
+                    <!-- but, usually we want to handle it programaticaly -->
+                    <!-- video on addingg prevent default on submit/form, in order to be able to runany javaScript -->
+                    <!-- maybe put the parethesis as an error, like the feed back for not meeeting the rewuirements of input value  -->
+                    <!-- to validate, create function for validation -->
+                    <!-- also make it reusable -->
+
+
+                    <button>Submit</button>
+
+                </form>
+            </fieldset>
+
+
 
 
         </div>

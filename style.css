@@ -103,10 +103,14 @@ a:hover {
 /* //////////////////////////// */
 
 
-
+fieldset {
+    background-color: white;
+}
 
 input {
-    margin-top: 5px;
+    margin-bottom: 20px;
+width: 300px;
+
 }
 
 .subject {
@@ -122,4 +126,9 @@ button {
     color: palevioletred;
     background-color: aquamarine;
     width: 200px;
+}
+
+.form-error {
+    color: red;
+    font-size: 0.9em;
 }
