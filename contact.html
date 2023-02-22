@@ -23,29 +23,41 @@
             <fieldset>
                 <form>
                     <div>
-                        <label for="name">Your name <div class="form-error">(required)</div></label>
-                        <input name="name" id="name" placeholder="Navn Navnesen">
-
-
+                        <label for="name">Your name
+                            <div class="form-error" id="name-error">(required)</div>
+                        </label>
+                        <div>
+                            <input name="name" id="name" placeholder="Navn Navnesen">
+                        </div>
                     </div>
                     <div>
-                        <label for="message">Tell us something (minimum length of 10)<div class="form-error">(minimum
-                                length of 10)</div></label>
-                        <div><input class="subject" name="message" id="message" placeholder="Start typing"></div>
+                        <label for="message">Tell us something
+                            <div class="form-error" id="message-error">(minimum length of 10)</div>
+                        </label>
+
+                        <div>
+                            <input class="subject" name="message" id="message" placeholder="Start typing">
+                        </div>
                         <!-- would have liked this to be a textarea, so the text would wrap, 
                             but unsure if that is allowd pr the assignment instructions, 
-                            or is there a way to to that while it still being input-->
+                            or is there a way to do that while it still being input-->
                     </div>
 
                     <div>
-                        <label for="email">Your e-mail <div class="form-error">(must be formatted like an email)</div>
-                            </label>
-                        <div><input name="email" id="email" placeholder="navn.navnesen@example.com"></div>
-
+                        <label for="email">Your e-mail
+                            <div class="form-error" id="email-error">(must be formatted like an email)</div>
+                        </label>
+                        <div>
+                            <input name="email" id="email" placeholder="navn.navnesen@example.com">
+                        </div>
                     </div>
                     <div>
-                        <label for="address">Your Address <div class="form-error">(minimum length og 25)</div></label>
-                        <div><input name="address" id="address" placeholder="Storgata 1, Postnummer Poststed"></div>
+                        <label for="address">Your Address
+                            <div class="form-error" id="address-error">(minimum length of 25)</div>
+                        </label>
+                        <div>
+                            <input name="address" id="address" placeholder="Storgata 1, Postnummer Poststed">
+                        </div>
 
                     </div>
                     <!-- the names of the inputs become the parameter sent in the querystring, with whatever written as the value -->
@@ -71,7 +83,7 @@
     <footer>
 
     </footer>
-
+<script src="js/contact.js"></script>
 </body>
 
 </html>

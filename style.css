@@ -114,7 +114,7 @@ width: 300px;
 }
 
 .subject {
-    height: 200px;
+    height: 100px;
 }
 
 .form-container {
@@ -125,10 +125,11 @@ button {
     margin-top: 10px;
     color: palevioletred;
     background-color: aquamarine;
-    width: 200px;
+    width: 300px;
 }
 
 .form-error {
     color: red;
     font-size: 0.9em;
+    display: none;
 }
