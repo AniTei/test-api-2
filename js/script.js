@@ -7,13 +7,10 @@ async function getSomeContent() {
     try {
         const respond = await fetch(url);
         const data = await respond.json();
-        console.log(data.drinks);
 
         contentDiv.innerHTML = "";
 
         for (let i = 0; i < data.drinks.length; i++) {
-
-            console.log(data.drinks[i]);
 
             contentDiv.innerHTML += `<a href="details.html?id=${data.drinks[i].idDrink}"> 
                                         <div class="item-index">

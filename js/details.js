@@ -5,15 +5,12 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const idDrink = params.get("id");
 
-console.log(idDrink);
-
 const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + idDrink;
 
 async function findDrink() {
     try {
         const respond = await fetch(url);
         const data = await respond.json();
-        console.log(data);
 
         detContDiv.innerHTML = "";
 
